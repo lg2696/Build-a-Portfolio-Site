@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+/* Begin with loading proper screen resolution display.*/
+
+@viewport {width: 100%}
+    @media (max-width: 300px) {
+        @viewport {width: 100%}
+}
+@media screen and (min-width: 301px ) and ( max-width : 550px ){
+    .header .udacity_logo_mob { order: 1;}
+    .header .right_panel { order: 2; }
+    .web_development_tools_mob { width: 100%; order: 3; }
+    .appify_mob { width: 100%; order: 4; }
+    .sunflower_mob { width: 100%; order: 5; }
+    .bokeh_mob  { width: 100%; order: 6; }
+    .footer { order: 7; }
+}
+@media screen and (min-width: 551px) and (max-width: 799px) {
+    .header .udacity_logo_tab { order: 1;}
+    .header .right_panel { order: 2; }
+    .web_development_tools_tab { width: 100%; order: 3; }
+    .appify_tab { width: 100%; order: 4; }
+    .sunflower_tab { width: 100%; order: 5; }
+    .bokeh_tab { width: 100%; order: 6; }
+    .footer { order: 7; }
+}
+@media screen and (min-width: 800px) and (max-width: 1400px){
+    .header .udacity_logo_desk { order: 1;}
+    .header .right_panel { order: 2; }
+    .web_development_tools_desk { width: 100%; order: 3; }
+    .appify_desk { width: 100%; order: 4; }
+    .sunflower_desk { width: 100%; order: 5; }
+    .bokeh_desk { width: 100%; order: 6; }
+    .footer { order: 7; }
+}
+/* Loading common screen elements.*/
+
+img, embed, object, video {max-width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+body{
+  column-width: 100%;
+  float: left;
+  flex-wrap: wrap;
+  display: flex;
+  font-size: 16px;
+  line-height: 1.;
+}
+
+hr {
+    width: 96%;
+    color: #2d3c49;
+    height: 1px;
+}
+
+h2 {
+    float: right;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1.5em;
+    line-height: .80;
+    font-family: "Arial Rounded MT Bold", "Arial, Helvetica", "Sans Serif";
+    color: #02b3e4;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    float: right;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1em;
+    line-height: .75;
+    font-family: "Arial Rounded MT Bold", "Arial, Helvetica", "Sans Serif";
+    color: #7d97ad;
+    font-weight: normal;
+    text-align: right;
+}
+
+h4 {
+    display: left;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0.67em;
+    margin-bottom: 0em;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: .70em;
+    line-height: .50;
+    font-family: "Arial Rounded MT Bold", "Arial, Helvetica", "Sans Serif";
+    color: #02b3e4;
+    font-weight: normal;
+    text-align: left;
+}
+
+h5 {
+    display: left;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: .45em;
+    line-height: .50;
+    font-family: "Arial Rounded MT Bold", "Arial, Helvetica", "Sans Serif";
+    color: #02b3e4;
+    font-weight: normal;
+    text-align: left;
+}
+
+h6 {
+    display: left;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 5%;
+    font-size: .75em;
+    font-family: "Times New Roman";
+    color: #7d97ad;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* Begin with entire container.*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    c0lumn-width: 100%;
+    clear: both;
+    display: table;
+}
+/* Load Header elements.*/
+
+header {
+    float: left;
+    flex-wrap: wrap;
+    display: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.left_panel {
+    float: left;
+    flex-wrap: wrap;
+    display: flex-wrap;
+    column-width: 50%;
+}
+
+.udacity_logo {
+    float: left;
+    display: inline;
+    flex-wrap: wrap;
+    max-width: 100%;
+    vertical-align: bottom;
+    column-width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    clear: both;
+}
+
+.right_panel {
+    float: right;
+    flex-wrap: flex-wrap;
+    display: inline-flex;
+    column-width: 50%;
+}
+
+.right_panel .studentname {
+    float: right;
+    flex-wrap: flex-wrap;;
+    display: inline-flex;
+    column-width: 50%;
+    vertical-align: top;
+    color: #02b3e4;
+    text-transform: uppercase;
+}
+
+
+.right_panel .pagetitle {
+    float: right;
+    flex-wrap: flex-wrap;
+    display: inline-flex;
+    column-width: 50%;
+    vertical-align: bottom;
+    color: #02b3e4;
+}
+
+/* Load main body section elements.*/
+div {
+    display: inline;
+    width: 100%;
+    clear: both;
+}
+
+.main {
+    float: left;
+    flex-wrap: wrap;
+    display: inline-flex;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    color: #2d3c49;
+    column-width: 100%;
+}
+
+
+.top_image {
+    float: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 80%;
+    clear: both
+}
+
+.main {
+  width= 100%;
+}
+.imageapp {
+    float: left;
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    vertical-align: bottom;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 2.5em;
+    column-width: 30.00%;
+}
+
+.a .imageapp_title {
+    float: right;
+    flex-wrap: wrap;
+    display: inline-flex;
+    padding-left: 5%;
+    padding-right: 10%;
+    vertical-align: bottom;
+    font-size: 1.5em;
+    width: 30.00;
+}
+
+.a .link {
+    float: right;
+    flex-wrap: wrap;
+    display: inline-flex;
+    padding-left: 5%;
+    padding-right: 10%;
+    vertical-align: bottom;
+    font-size: .45em;
+    width: 30.00%;
+}
+
+a:link, a:visited {
+    float: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #02b3e4;
+    padding: 10px 10px;
+    text-align: center;
+    width: 33.32%;
+
+}
+
+a:hover, a:active {
+    float: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: underline;
+    color: #2d3c39;
+    padding: 10px 10px;
+    text-align: center;
+    width: 33.32%;
+}
+
+/* Load Footer elements.*/
+
+footer {
+    clear: left;
+    flex-wrap: wrap;
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+}
+
+footer p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Times New Roman";
+    font-size: .80em;
+}
+
+

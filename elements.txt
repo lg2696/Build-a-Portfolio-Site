@@ -1,0 +1,39 @@
+container article main
+  picture top_image
+    source srcset media
+      img
+  section imageapp
+    picture imageapp1
+      source srcset media
+        p
+          img imageapp1
+        h2
+          imageapp_title
+	h3
+	  link
+  section imageapp
+    picture imageapp2
+      source srcset media
+        p
+ 	  img imageapp2
+        h2
+	  imageapp_title
+	h3
+	  link
+  section imageapp
+    picture imageapp3
+      source srcset media
+        p
+          img imageapp3
+        h2
+          imageapp_title
+        h3
+          link
+  footer
+    hr
+    h4
+
+	
+
+
+
