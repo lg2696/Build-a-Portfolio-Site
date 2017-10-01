@@ -1,0 +1,130 @@
+@viewport {width: 100%;}
+    @media (min-width: 300px) {
+        @viewport {width: 100%;
+    }
+
+
+@media screen and (min-width: 301px) and (max-width: 550px) {
+    .udacity_logo_mob { order: 1;}
+    .right_panel { order: 2; }
+    .web_tools .web_development_tools_mob { order: 3; }
+    .imageapp .apple_appify_mob { order: 4; }
+    .imageapp .sunflower_mob { order: 5; }
+    .imageapp .bokeh_mob  { order: 6; }
+    .footer { order: 7; }
+}
+@media screen and (min-width: 551px) and (max-width: 799px) {
+    .udacity_logo_tab { order: 1;}
+    .right_panel { order: 2; }
+    .web_tools .web_development_tools_mob { order: 3; }
+    .imageapp .apple_appify_tab { order: 4; }
+    .imageapp .sunflower_tab { order: 5; }
+    .imageapp .bokeh_tab { order: 6; }
+    .footer { order: 7; }
+    .logo-container { width: 100%; }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    .udacity_logo_desk { order: 1;}
+    .right_panel { order: 2; }
+    .web_tools .web_development_tools_tab { width: 50%; order: 3; }
+    .imageapp .apple_appify_desk { order: 6; }
+    .imageapp .sunflower_desk { order: 5; }
+    .imageapp .bokeh_desk { order: 4; }
+    .footer { order: 7; }
+}
+
+.container {
+
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+/*
+.header_title {
+    text-align: right;
+}
+*/
+
+header {
+  margin-left: 10%;
+  margin-right: 5%;
+  border-bottom: 1px solid #2d3c39;width: 100%;
+}
+
+/*
+.udacity_logo {
+    margin-top: 100px;
+}
+*/
+
+p {
+text-align: center;
+}
+
+.studentname {
+color: #02b3e4;
+font-weight: bold;
+text-align: right;
+text-transform: uppercase;
+font-size: 3vw;
+}
+
+.pagetitle {
+font-size: 3vw;
+text-align: right;
+}
+
+.web_tools, .icons {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.imageapp {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h4, h5 {
+   margin-left: 5%;
+   margin-right: 5%;
+}
+a:link, a:visited {
+    float:none;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #02b3e4;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+a:hover, a:active {
+    float:none;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: underline;
+    color: #2d3c39;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+footer {
+    border-top: 1px solid #2d3c39;width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.logo-container {
+    width: 100%;
+}
+/*
+@media (min-width: 551px) {
+    .logo-container {
+        width: 100%;
+    }
+}
+*/
