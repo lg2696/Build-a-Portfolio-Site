@@ -10,42 +10,41 @@
 </head>
     <body>
     <div class="container-fluid:after">
-        <header class="row ">
-            <div class="col-md-6 udacity_logo">
-                <picture>
-                     <source media="(max-width: 1200px)" srcset="images/udacity_logo_desk.jpg">
-                     <source media="(max-width: 799px)" srcset="images/udacity_logo_tab.jpg">
-                     <source media="(max-width: 550px)" srcset="images/udacity_logo_tab.jpg">
-                    <img src="images/udacity_logo_tab.jpg" alt="udacity_logo" style="width:auto">
-                </picture>
-            </div>
-            <div class="col-md-6 right_panel">
-                <h2 class="studentname">Linda E Gray</h2>
-                <h3 class="pagetitle">Web Tool Time</h3>
-            </div>
-        </header>
-
-
+        <div col-md-12>
+            <header class="row ">
+                <div class="col-md-6 udacity_logo">
+                    <picture>
+                         <source media="(max-width: 1200px)" srcset="images/udacity_logo_desk.jpg">
+                         <source media="(max-width: 799px)" srcset="images/udacity_logo_tab.jpg">
+                         <source media="(max-width: 550px)" srcset="images/udacity_logo_tab.jpg">
+                        <img src="images/udacity_logo_tab.jpg" alt="udacity_logo" style="width:auto">
+                    </picture>
+                </div>
+                <div class="col-md-6 right_panel">
+                    <h2 class="studentname">Linda E Gray</h2>
+                    <h3 class="pagetitle">Web Tool Time</h3>
+                </div>
+            </header>
+        </div>
         <!-- Header Border Bottom as seperator for the Header from the Main Body. -->
-
         <!-- Main Body content -->
-
             <main class="main">
                 <!-- Large image on top of Main Body.-->
-                <div class="row web_tools">
-                    <section class="col-xs-12">
-                        <picture>
-                            <source media="(max-width: 1200px)" srcset="images/web_development_tools_desk.jpg">
-                            <source media="(max-width: 799px)" srcset="images/web_development_tools_tab.jpg">
-                            <source media="(max-width: 550px)" srcset="images/web_development_tools_mob.jpg">
-                            <source media="(max-width: 300px)" srcset="images/web_development_tools_mob.jpg">
-                            <img src="images/web_development_tools_desk.jpg" alt="web_tools" style="width: auto">
-                        </picture>
-                        <p>Welcome to my portal for Web Tools.</p><p>Please feel free to bookmark this site and use the tools available to help you develop web pages.</p><br>
-                    </section>
+                <div class="row web_tools_container">
+                        <div id="web_tools" class="col-md-12">
+                            <section>
+                                <picture>
+                                    <source media="(max-width: 1200px)" srcset="images/web_development_tools_desk.jpg">
+                                    <source media="(max-width: 799px)" srcset="images/web_development_tools_tab.jpg">
+                                    <source media="(max-width: 550px)" srcset="images/web_development_tools_mob.jpg">
+                                    <img src="images/web_development_tools_desk.jpg" alt="web_tools" style="max-width: 500px">
+                                </picture>
+                                <p>Welcome to my portal for Web Tools.</p><p>Please feel free to bookmark this site and use the tools available to help you develop web pages.</p><br>
+                            </section>
+                        </div>
                 </div>
                 <!-- This section displays the smaller images and their links.-->
-                <div class="row imageapp">
+                <div class="row imageapp_container">
                     <section class="col-md-4">
                         <picture>
                             <source media="(max-width: 1200px)" srcset="images/apple_appify_desk.jpg">
@@ -67,7 +66,6 @@
                         </picture>
                         <h4><a class="imageapp_title" href="https://github.com/udacity/Sunflower" title="sunflower" target="_blank">Sunflower</a></h4>
                         <h5><a class="link" href="https://github.com/udacity/Sunflower" title="sunflower_link" target="_blank">https://github.com/udacity/Sunflower</a></h5>
-
                     </section>
                     <section class="col-md-4">
                         <picture>
@@ -82,15 +80,12 @@
                     </section>
                 </div>
             </main>
-
             <!-- Border line as seperator for the Main Body from the Footer. -->
             <div class="row">
-                <footer class="col-xs-12">
+                <footer class="col-md-12">
                     <h6>All rights reserved, Linda E Gray &#169; 2017</h6>
                 </footer>
             </div>
     </div>
-<!--
     </body>
--->
 </html>
