@@ -1,11 +1,7 @@
-/*
-@viewport {
-    width: 10vmin;
-}
-*/
 @media (min-width: 300px) {
         @viewport {width: 300px;
 }
+
 @media screen and (min-width: 301px) and (max-width: 550px) {
     .udacity_logo_mob { order: 1;}
     .right_panel { order: 2; }
@@ -15,6 +11,7 @@
     .imageapp .bokeh_mob  { order: 6; }
     .footer { order: 7; }
 }
+
 @media screen and (min-width: 551px) and (max-width: 799px) {
     .udacity_logo_tab { order: 1;}
     .right_panel { order: 2; }
@@ -25,6 +22,7 @@
     .footer { order: 7; }
     .logo-container { width: 100%; }
 }
+
 @media screen and (min-width: 800px) and (max-width: 1200px){
     .udacity_logo_desk { order: 1;}
     .right_panel { order: 2; }
@@ -34,44 +32,32 @@
     .imageapp .bokeh_desk { order: 4; }
     .footer { order: 7; }
 }
+
 body{
   overflow-x: hidden;
   overflow-y: scroll;
 }
+
 .logo-container {
     width: 100%;
+    border-bottom: 1px solid #2d3c39;
 }
-.parent-container {
-    display: flex;
-    width: 100%;
 
-}
-.child-container {
-    display: grid
-    width: 33%;
-    padding: 1em;
-}
 img {
     width: 100%;
     height: auto;
 }
-.img-responsive {
-    width: 100%;
-}
-header {
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-    border-bottom: 1px solid #2d3c39;
-}
+
 .udacity_logo {
     width: 20%;
 }
+
 p {
     text-align: center;
     padding: 1em;
     font-size: 1.25em;
 }
+
 .studentname {
     color: #02b3e4;
     font-weight: bold;
@@ -79,10 +65,12 @@ p {
     text-transform: uppercase;
     font-size: 3vw;
 }
+
 .pagetitle {
     font-size: 3vw;
     text-align: right;
 }
+
 .web_tools_container {
     display: block;
     height: 80%;
@@ -90,33 +78,37 @@ p {
     text-align: center;
     margin-top: 2%;
 }
-#web_tools {
-    display: block;
-    margin: 0 auto;
-}
+
 .imageapp_container {
     width: 100%;
     margin-left: 5%;
-
     margin-bottom: 3%;
+    border-bottom: 1px solid #2d3c39;
 }
+
 h2 h3 {
     width: 30%;
     text-align: right;
 }
+
 h4 {
    margin-left: 4%;
    margin-right: 4%;
    text-align: center;
 }
+
 h5 {
    margin-left: 4%;
    margin-right: 4%;
    text-align: center;
 }
+
 h6 {
     font-size: .75em;
+    margin-left: 2%;
+    text-align: left;
 }
+
 a:link, a:visited {
     float: none;
     display: flex;
@@ -126,6 +118,7 @@ a:link, a:visited {
     margin-left: 5%;
     margin-right: 5%;
 }
+
 a:hover, a:active {
     float: none;
     display: flex;
@@ -133,6 +126,7 @@ a:hover, a:active {
     text-decoration: underline;
     color: #2d3c39;
 }
+
 footer {
     border-top: 1px solid #2d3c39;
     display: flex;
