@@ -3,38 +3,107 @@
 }
 
 @media screen and (min-width: 301px) and (max-width: 550px) {
-    .udacity_logo_mob { order: 1; }
-    .right_panel { order: 2; }
-    .web_tools .web_development_tools_mob { order: 3; }
-    .imageapp .apple_appify_mob { order: 4; }
-    .imageapp .sunflower_mob { order: 5; }
-    .imageapp .bokeh_mob  { order: 6; }
-    .footer { order: 7; }
+    .udacity_logo {
+        order: 1;
+    }
+
+    .right_panel {
+        order: 2;
+    }
+
+    .web_tools .web_development_tools_mob {
+        order: 3;
+    }
+
+    .imageapp .apple_appify_mob {
+        order: 4;
+    }
+
+    .imageapp .sunflower_mob {
+        order: 5;
+    }
+
+    .imageapp .bokeh_mob  {
+        order: 6;
+    }
+
+    .footer {
+        order: 7;
+    }
+
 }
 
 @media screen and (min-width: 551px) and (max-width: 799px) {
-    .udacity_logo_tab { order: 1; }
-    .right_panel { order: 2; }
-    .web_tools .web_development_tools_mob { order: 3; }
-    .imageapp .apple_appify_tab { order: 4; }
-    .imageapp .sunflower_tab { order: 5; }
-    .imageapp .bokeh_tab { order: 6; }
-    .footer { order: 7; }
-    .logo-container { width: 100%; }
+    .udacity_logo {
+        order: 1;
+    }
+
+    .right_panel {
+        order: 2;
+    }
+
+    .web_tools .web_development_tools_mob {
+        order: 3;
+    }
+
+    .imageapp .apple_appify_tab {
+        order: 4;
+    }
+
+    .imageapp .sunflower_tab {
+        order: 5;
+    }
+
+    .imageapp .bokeh_tab {
+        order: 6;
+    }
+
+    .footer {
+        order: 7;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 800px) and (max-width: 1200px){
-    .udacity_logo_desk { order: 1;}
-    .right_panel { order: 2; }
-    .web_tools .web_development_tools_mob { width: 50%; order: 3; }
-    .imageapp .apple_appify_desk { order: 6; }
-    .imageapp .sunflower_desk { order: 5; }
-    .imageapp .bokeh_desk { order: 4; }
-    .footer { order: 7; }
-    .p {font-size: 2em; }
+    .udacity_logo {
+        order: 1;
+    }
+
+    .right_panel {
+        order: 2;
+    }
+
+    .web_tools .web_development_tools_mob {
+        width: 50%; order: 3;
+    }
+
+    .imageapp .apple_appify_desk {
+        order: 6;
+    }
+
+    .imageapp .sunflower_desk {
+        order: 5;
+    }
+
+    .imageapp .bokeh_desk {
+        order: 4;
+    }
+
+    .footer {
+        order: 7;
+    }
+
+    .p {
+        font-size: 2em;
+    }
+
 }
 
-body {
+body, html {
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -59,6 +128,7 @@ img {
 }
 
 .udacity_logo {
+    display: inline-block;
     width: 20%;
     padding: 0%;
     margin-left: left;
@@ -77,11 +147,11 @@ img {
     font-weight: bold;
     text-align: right;
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 1em;
 }
 
 .pagetitle {
-    font-size: 4vw;
+    font-size: 1em;
     text-align: right;
 }
 
@@ -127,27 +197,26 @@ img.displayed {
     margin-bottom: 3%;
 }
 
-h2 h3 {
+h2,
+h3 {
     width: 30%;
     text-align: right;
+    margin-left: auto;
+    margin-right: 0%;
 }
 
-h4 {
-   margin-left: 4%;
-   margin-right: 4%;
-   text-align: center;
-}
-
+h4,
 h5 {
-   margin-left: 4%;
-   margin-right: 4%;
+   margin: 4% 4%;
    text-align: center;
 }
 
-h6 {
-    font-size: .75em;
-    margin-left: 2%;
-    text-align: left;
+footer {
+    word-break:break-all;
+    width: auto;
+    font-size: 10px;
+    line-height: 15px;
+    font-family:sans-serif;
 }
 
 a:link, a:visited {
@@ -168,9 +237,4 @@ a:hover, a:active {
     color: #2d3c39;
 }
 
-footer {
-    display: flex;
-    width: 100%;
-    padding: 1em 1em;
-}
 /*Testing Versioning in GitHub 5*/
