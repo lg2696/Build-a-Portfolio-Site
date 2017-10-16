@@ -113,7 +113,7 @@ img.displayed {
 }
 
 .child-container {
-    display: block;
+    display: inline-block;
     width: 100%;
     height: auto;
     border-bottom: 1px solid #2d3c39;
@@ -174,4 +174,4 @@ footer {
     width: 100%;
     padding: 1em 1em;
 }
-/*Testing Versioning in GitHub 4*/
+/*Testing Versioning in GitHub 5*/
